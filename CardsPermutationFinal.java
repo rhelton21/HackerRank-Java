@@ -2,7 +2,19 @@ package hackerRank;
 import java.io.*;
 import java.io.InputStreamReader;
 import java.util.*;
-public class CardsPermutationFinal {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CardsPermutationFinal {
     private final static long MOD = 1000000007;
     private final static long INV_TWO = inverseElmnt(2);
     private static final long Y_DISP = 10000000000l;
@@ -35,7 +47,12 @@ public class CardsPermutationFinal {
         USED_Y.add(y);
         return y;
     }
-    public static long solve(int n, int[] perm) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static long solve(int n, int[] perm) {
         int[] undefinedAmnt = new int[n];
         undefinedAmnt[n - 1] = 0;
         for (int i = n - 2; i >= 0; i--) {
@@ -201,12 +218,22 @@ public class CardsPermutationFinal {
         }
         return result;
     }
-    private static void recalculateSize(Treap t) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private static void recalculateSize(Treap t) {
         if (null != t) {
             t.recalculateSize();
         }
     }
-    public static Treap merge(Treap l, Treap r) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static Treap merge(Treap l, Treap r) {
         if (null == l) {
             return r;
         }
@@ -239,11 +266,21 @@ public class CardsPermutationFinal {
             this.right = right;
             this.left = left;
         }
-        private void recalculateSize() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void recalculateSize() {
             size = (null == left ? 0 : left.size) + (null ==
                     right ? 0 : right.size) + 1;
         }
-        public Treap[] split(int x) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Treap[] split(int x) {
             Treap newLeft = null;
             Treap newRight = null;
             if (x < this.x) {
@@ -272,7 +309,12 @@ public class CardsPermutationFinal {
             return new Treap[]{newLeft, newRight};
         }
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());

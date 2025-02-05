@@ -6,12 +6,29 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class RedJohnIsBack {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class RedJohnIsBack {
 
     private final static byte MAX_N = 40;
     private final static int MAX_WAYS = 217286;
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         //INIT
         final StringBuffer sb = new StringBuffer();

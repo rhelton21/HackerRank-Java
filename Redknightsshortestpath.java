@@ -9,10 +9,27 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class Redknightsshortestpath {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Redknightsshortestpath {
 
     // Complete the printShortestPath function below.
-    static void printShortestPath(int n, int i_start, int j_start, int i_end, int j_end) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void printShortestPath(int n, int i_start, int j_start, int i_end, int j_end) {
         class Entry {
             int i;
             int j;
@@ -93,7 +110,12 @@ public class Redknightsshortestpath {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 

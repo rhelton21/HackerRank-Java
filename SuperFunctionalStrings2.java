@@ -5,6 +5,13 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.IntStream;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class SuperFunctionalStrings2 {
     static final int MOD = 1_000_000_007;
     static final int MAX = 100000;
@@ -22,7 +29,12 @@ class SuperFunctionalStrings2 {
     static int[] suffixArr = new int[MAX];
     static int[] lcp = new int[MAX];
 
-    static void buildSuffixArray(char[] txt) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void buildSuffixArray(char[] txt) {
         int n = txt.length;
         Suffix[] suffixes = new Suffix[n];
         for (int i = 0; i < n; i++) {
@@ -62,7 +74,12 @@ class SuperFunctionalStrings2 {
             invSuff[suffixArr[i]] = i;
         }
     }
-    static void kasai(char[] txt) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void kasai(char[] txt) {
         int n = txt.length;
         int k = 0;
         for (int i = 0; i < n; i++) {
@@ -137,7 +154,12 @@ class SuperFunctionalStrings2 {
         }
         return map;
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         //       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

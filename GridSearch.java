@@ -13,7 +13,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class GridSearch {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class GridSearch {
 
     /*
      * Complete the 'gridSearch' function below.
@@ -24,7 +36,12 @@ public class GridSearch {
      *  2. STRING_ARRAY P
      */
 
-    public static String gridSearch(List<String> g, List<String> p) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String gridSearch(List<String> g, List<String> p) {
         int k=0;
         int xa=0;
         String[] G = g.toArray(new String[0]);
@@ -57,7 +74,12 @@ public class GridSearch {
         // Complete this function
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

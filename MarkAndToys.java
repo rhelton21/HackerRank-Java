@@ -3,8 +3,25 @@ package hackerRank;
 //https://www.hackerrank.com/challenges/largest-permutation
 import java.io.*;
 
-public class MarkAndToys {
-    public static void main(String[] args) throws IOException {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class MarkAndToys {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         //Get input

@@ -1,7 +1,19 @@
 package hackerRank;
 
 import java.util.Scanner;
-public class Billboards {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Billboards {
     static int n;
     static int k;
     static long a[];
@@ -9,7 +21,12 @@ public class Billboards {
     static int heap[];
     static int heapSize;
     static int where[];
-    static void swap(int a[], int i, int j) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void swap(int a[], int i, int j) {
         int tmp = a[i];
         a[i] = a[j];
         a[j] = tmp;
@@ -17,14 +34,24 @@ public class Billboards {
     static boolean lessThan(int i, int j) {
         return f[i - 1] + a[i] < f[j - 1] + a[j];
     }
-    static void siftUp(int i) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void siftUp(int i) {
         if (i > 1 && lessThan(heap[i], heap[i / 2])) {
             swap(heap, i, i / 2);
             swap(where, heap[i], heap[i / 2]);
             siftUp(i / 2);
         }
     }
-    static void siftDown(int i) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void siftDown(int i) {
         int which = i;
         if (2 * i <= heapSize && lessThan(heap[2 * i],
                 heap[which])) which = 2 * i;
@@ -36,12 +63,22 @@ public class Billboards {
             siftDown(which);
         }
     }
-    static void insert(int element) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void insert(int element) {
         where[element] = ++heapSize;
         heap[heapSize] = element;
         siftUp(heapSize);
     }
-    static void remove(int element) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void remove(int element) {
         if (where[element] < heapSize) {
             where[heap[heapSize]] = where[element];
             heap[where[element]] = heap[heapSize--];
@@ -50,7 +87,12 @@ public class Billboards {
         } else heapSize--;
         where[element] = 0;
     }
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner cin = new Scanner(System.in);
         n = cin.nextInt();
         k = cin.nextInt();

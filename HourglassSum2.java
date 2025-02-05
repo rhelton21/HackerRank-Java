@@ -11,6 +11,13 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class HourglassSum2 {
 
     /*
@@ -20,7 +27,12 @@ class HourglassSum2 {
      * The function accepts 2D_INTEGER_ARRAY arr as parameter.
      */
 
-    public static int hourglassSum(List<List<Integer>> arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int hourglassSum(List<List<Integer>> arr) {
         int[][] array = arr.stream()
                 .map(l -> l.stream().mapToInt(Integer::intValue).toArray())
                 .toArray(int[][]::new);
@@ -38,7 +50,12 @@ class HourglassSum2 {
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
  //       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

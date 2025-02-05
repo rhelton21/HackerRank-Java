@@ -8,6 +8,13 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class Result {
 
     /*
@@ -19,7 +26,12 @@ class Result {
      *  2. 2D_INTEGER_ARRAY cases
      */
 
-    public static List<Integer> serviceLane(int n, List<List<Integer>> cases) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<Integer> serviceLane(int n, List<List<Integer>> cases) {
         List<Integer>  result = new ArrayList<>();
         Integer[] casesArr = cases.toArray(new Integer[0]);
         for (int i = 0; i < casesArr.length; i++) {
@@ -35,8 +47,18 @@ class Result {
 
 }
 
-public class ServiceLaneII {
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class ServiceLaneII {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

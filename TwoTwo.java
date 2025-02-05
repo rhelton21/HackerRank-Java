@@ -12,7 +12,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class TwoTwo {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class TwoTwo {
 
     /*
      * Complete the 'twoTwo' function below.
@@ -21,7 +33,12 @@ public class TwoTwo {
      * The function accepts STRING a as parameter.
      */
 
-    public static int twoTwo(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int twoTwo(String s) {
         int l = s.length();
         int sum = 0, carry = 0;
         String ans = "";
@@ -34,7 +51,12 @@ public class TwoTwo {
         return Integer.parseInt(ans); // read in one command-line argument
     }
 
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
 
         /*  IN
         5

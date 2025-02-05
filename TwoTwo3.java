@@ -12,6 +12,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class TwoTwo3 {
 
     /*
@@ -21,7 +28,12 @@ class TwoTwo3 {
      * The function accepts STRING a as parameter.
      */
 
-    //   public static int twoTwo(String a) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    //   public static int twoTwo(String a) {
     // Write your code here
 
     //   }
@@ -31,7 +43,12 @@ class TwoTwo3 {
      * The function is expected to return an INTEGER.
      * The function accepts STRING a as parameter.
      */
-    public static int twoTwo(String a) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int twoTwo(String a) {
         Trie trie = new Trie();
         BigInteger x = BigInteger.ONE;
         trie.insert(x.toString());
@@ -63,7 +80,12 @@ class TwoTwo3 {
             children = new Trie[10];
         }
 
-        void insert(String val) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void insert(String val) {
             if (val.length() == 0) {
                 end = true;
                 return;
@@ -76,7 +98,12 @@ class TwoTwo3 {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

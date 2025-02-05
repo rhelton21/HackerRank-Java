@@ -5,7 +5,19 @@ import java.io.*;
 import java.util.*;
 
 
-public class MinimumSwaps {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class MinimumSwaps {
     // Complete the minimumSwaps function below.
     static int minimumSwaps(int[] arr) {
         int i = 0;
@@ -28,7 +40,12 @@ public class MinimumSwaps {
     private static final Scanner scanner = new
             Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(
                 new FileWriter(System.getenv("OUTPUT_PATH")));
         int n = scanner.nextInt();

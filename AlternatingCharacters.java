@@ -71,6 +71,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class AlternatingCharacters {
 
     /*
@@ -80,7 +87,12 @@ class AlternatingCharacters {
      * The function accepts STRING s as parameter.
      */
 
-    public static int alternatingCharacters(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int alternatingCharacters(String s) {
         int deletions = 0;
         for (int i = 0; i < s.length() - 1; i++) {
             if (s.charAt(i) == s.charAt(i + 1)) {
@@ -91,7 +103,12 @@ class AlternatingCharacters {
 
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

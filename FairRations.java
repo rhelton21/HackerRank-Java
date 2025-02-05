@@ -12,7 +12,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class FairRations {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class FairRations {
 
     /*
      * Complete the 'fairRations' function below.
@@ -21,7 +33,12 @@ public class FairRations {
      * The function accepts INTEGER_ARRAY B as parameter.
      */
 
-    public static String fairRations(List<Integer> list) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String fairRations(List<Integer> list) {
         int odds = 0;
         int[] B = list.stream().mapToInt(i->i).toArray();
         int sum = Arrays.stream(B).sum();
@@ -44,7 +61,12 @@ public class FairRations {
         return "NO";
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

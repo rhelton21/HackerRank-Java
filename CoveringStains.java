@@ -12,6 +12,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class CoveringStains {
 
     private static final int MOD = (int) 1e9 + 7;
@@ -24,7 +31,12 @@ class CoveringStains {
      *  2. 2D_INTEGER_ARRAY coordinates
      */
 
-    public static int coveringStains(int n, int k, List<List<Integer>> coordinates) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int coveringStains(int n, int k, List<List<Integer>> coordinates) {
         k = n - k;
 
         int[][] stains = new int[n + 1][2];
@@ -82,7 +94,12 @@ class CoveringStains {
         return ans;
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

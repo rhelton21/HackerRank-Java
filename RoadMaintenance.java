@@ -8,7 +8,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
 
-public class RoadMaintenance {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class RoadMaintenance {
     static int mod = (int) 1e9 + 7;
     static int N = 2 * 100000 + 5;
     static int n, m, x, y;
@@ -16,7 +28,12 @@ public class RoadMaintenance {
     static long[][][] temp = new long[N][11][11];
     static List<Integer>[] v = new ArrayList[N];
 
-    public static void dfs(int node, int root) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void dfs(int node, int root) {
         dp[node][0][0] = 1;
         for (int it : v[node]) {
             if (it == root) continue;
@@ -43,7 +60,12 @@ public class RoadMaintenance {
             dp[node][i][1] = (dp[node][i][1] + dp[node][i][0]) % mod;
         }
     }
-    public static int roadMaintenance(int n, int m, List<List<Integer>> edges) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int roadMaintenance(int n, int m, List<List<Integer>> edges) {
         RoadMaintenance.m = m;
         RoadMaintenance.n = n;
 
@@ -60,7 +82,12 @@ public class RoadMaintenance {
         dfs(0, -1);
         return (int) dp[0][m][0];
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());

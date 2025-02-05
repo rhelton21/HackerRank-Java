@@ -8,7 +8,19 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
-public class CatAndMouse {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CatAndMouse {
 
     // Complete the catAndMouse function below.
     static String catAndMouse(int x, int y, int z) {
@@ -30,7 +42,12 @@ public class CatAndMouse {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int q = scanner.nextInt();

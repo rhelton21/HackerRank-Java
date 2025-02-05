@@ -8,6 +8,13 @@ import java.util.List;
 import java.util.stream.IntStream;
 //https://www.hackerrank.com/challenges/circular-palindromes/problem?isFullScreen=false&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class CircularPalindromes {
     //   private static OutputWriter out;
 //    InputStream is;
@@ -21,12 +28,22 @@ class CircularPalindromes {
      * The function accepts STRING s as parameter.
      */
 
-    public static List<Integer> circularPalindromes(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<Integer> circularPalindromes(String s) {
         // Write your code here
         return null;
     }
 
-    public static int solve(String str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int solve(String str) {
         int n = ni();
         char[] s = ns(n);
         char[] s2 = new char[2 * n];
@@ -88,7 +105,12 @@ class CircularPalindromes {
         return 0;
     }
 
-    public static class MaxHeap {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static class MaxHeap {
         public int[] a;
         public int[] map;
         public int[] imap;
@@ -96,7 +118,12 @@ class CircularPalindromes {
         public int pos;
         public static int INF = Integer.MIN_VALUE;
 
-        public MaxHeap(int m) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public MaxHeap(int m) {
             n = m + 2;
             a = new int[n];
             map = new int[n];
@@ -107,7 +134,12 @@ class CircularPalindromes {
             pos = 1;
         }
 
-        public int add(int ind, int x) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int add(int ind, int x) {
             int ret = imap[ind];
             if (imap[ind] < 0) {
                 a[pos] = x;
@@ -120,7 +152,12 @@ class CircularPalindromes {
         }
 
 
-        public int remove(int ind) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int remove(int ind) {
             if (pos == 1) return INF;
             if (imap[ind] == -1) return INF;
 
@@ -139,15 +176,30 @@ class CircularPalindromes {
             return ret;
         }
 
-        public int max() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int max() {
             return a[1];
         }
 
-        public int size() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int size() {
             return pos - 1;
         }
 
-        private void up(int cur) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void up(int cur) {
             for (int c = cur, p = c >>> 1; p >= 1 && a[p] < a[c]; c >>>= 1, p >>>= 1) {
                 int d = a[p];
                 a[p] = a[c];
@@ -161,7 +213,12 @@ class CircularPalindromes {
             }
         }
 
-        private void down(int cur) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void down(int cur) {
             for (int c = cur; 2 * c < pos; ) {
                 int b = a[2 * c] > a[2 * c + 1] ? 2 * c : 2 * c + 1;
                 if (a[b] > a[c]) {
@@ -182,7 +239,12 @@ class CircularPalindromes {
         }
     }
 
-    public static int[] palindrome(char[] str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] palindrome(char[] str) {
         int n = str.length;
         int[] r = new int[2 * n];
         int k = 0;
@@ -317,7 +379,12 @@ class CircularPalindromes {
 
     //       private static void tr(Object... o) { System.out.println(Arrays.deepToString(o)); }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         //       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

@@ -65,9 +65,26 @@ Sample Output 1
 
 import java.util.Scanner;
 
-public class DesignerPdfViewer {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class DesignerPdfViewer {
 
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         List<Integer> letterHeights = new ArrayList<Integer>();
@@ -80,7 +97,12 @@ public class DesignerPdfViewer {
         System.out.println(designerPdfViewer(letterHeights, word));
     }
 
-    public static int designerPdfViewer(List<Integer> h, String word) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int designerPdfViewer(List<Integer> h, String word) {
 
         int area;
         int maxHeight = h.get(0);

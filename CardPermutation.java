@@ -3,11 +3,28 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class CardPermutation {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CardPermutation {
 
     static long N = (long) Math.pow(10, 9) + 7;
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
@@ -22,7 +39,12 @@ public class CardPermutation {
         bw.flush();
     }
 
-    public static long solve(int[] P) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static long solve(int[] P) {
         int n = P.length;
         int[] fixed = new int[n];
         Arrays.fill(fixed, 0);
@@ -91,7 +113,12 @@ public class CardPermutation {
         return S;
     }
 
-    public static int[] getnP(int[] P, int[] fixed) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] getnP(int[] P, int[] fixed) {
         int n = P.length;
         int[] nP = new int[n];
         for (int i = 0; i < n; i++) {

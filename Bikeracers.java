@@ -9,7 +9,19 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class Bikeracers {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Bikeracers {
     static BufferedReader in = new BufferedReader(new InputStreamReader(
             System.in));
     static StringBuilder out = new StringBuilder();
@@ -20,7 +32,12 @@ public class Bikeracers {
     private static Node[] bikes;
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         String line = in.readLine();
         String[] data = line.split("\\s+");
         int numBikers = Integer.parseInt(data[0]);
@@ -72,7 +89,12 @@ public class Bikeracers {
         System.out.println(dist);
     }
 
-//    public static long bikeRacers(List<List<Integer>> bikers, List<List<Integer>> bikes) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ *///    public static long bikeRacers(List<List<Integer>> bikers, List<List<Integer>> bikes) {
         // Write your code here
 
 //    }
@@ -84,7 +106,12 @@ public class Bikeracers {
         final int x;
         final int y;
 
-        public Coordinate(int x, int y) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Coordinate(int x, int y) {
             this.x = x;
             this.y = y;
         }
@@ -96,14 +123,24 @@ public class Bikeracers {
         final long cost;
         String name;
 
-        public BikerBikeDistance(int biker, int bike, long cost) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public BikerBikeDistance(int biker, int bike, long cost) {
             this.biker = biker;
             this.bike = bike;
             this.cost = cost;
         }
 
         @Override
-        public int compareTo(BikerBikeDistance o) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int compareTo(BikerBikeDistance o) {
             if (cost < o.cost) {
                 return -1;
             }
@@ -119,27 +156,52 @@ public class Bikeracers {
         private int visitedNum;
         private boolean isTerminus;
 
-        public Node() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Node() {
             connections = new LinkedList<Node>();
             visitedNum = -999;
             isTerminus = false;
         }
 
-        public Node(boolean terminus) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Node(boolean terminus) {
             connections = new LinkedList<Node>();
             visitedNum = -999;
             isTerminus = terminus;
         }
 
-        public int getVisited() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int getVisited() {
             return visitedNum;
         }
 
-        public void addConnection(Node n) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public void addConnection(Node n) {
             connections.add(n);
         }
 
-        public boolean dfsAndReverse(int v) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public boolean dfsAndReverse(int v) {
             if (isTerminus) {
                 return true;
             }

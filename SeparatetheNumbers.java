@@ -93,7 +93,19 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class SeparatetheNumbers {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class SeparatetheNumbers {
 
 
 
@@ -103,7 +115,12 @@ public class SeparatetheNumbers {
      * The function accepts STRING s as parameter.
      */
 
-    public static void separateNumbers(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void separateNumbers(String s) {
         for (int i = 1; i <= s.length() / 2; i++) {
             long firstNum = Long.parseLong(s.substring(0, i));
             StringBuilder sequence = new StringBuilder();
@@ -120,7 +137,12 @@ public class SeparatetheNumbers {
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
         int q = Integer.parseInt(bufferedReader.readLine().trim());

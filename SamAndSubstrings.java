@@ -4,11 +4,28 @@ package hackerRank;
 //See: https://www.hackerrank.com/contests/w3/challenges/sam-and-substrings
 import java.io.*;
 
-public class SamAndSubstrings {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class SamAndSubstrings {
 
     private final static int MOD = 1000000007;
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         int[] balls = strNumToArr((new BufferedReader(new InputStreamReader(System.in))).readLine());
 

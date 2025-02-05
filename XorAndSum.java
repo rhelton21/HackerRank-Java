@@ -6,12 +6,29 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class XorAndSum {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class XorAndSum {
 
     final private static int MAX_I = 314159;
     final private static int MOD = 1000000007;
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         //INPUT
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -65,7 +82,12 @@ public class XorAndSum {
         return ret;
     }
 
-    private static void reverse(final byte[] arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private static void reverse(final byte[] arr) {
         for (int i = 0, j = arr.length - 1; i < j; ++i, --j) {
             final byte c = arr[i];
             arr[i] = arr[j];

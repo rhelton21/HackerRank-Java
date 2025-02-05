@@ -2,8 +2,25 @@ package hackerRank;
 
 import java.util.Scanner;
 
-public class Highestvaluepalindrome2 {
-    public static void main(String[] args) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Highestvaluepalindrome2 {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int n = scanner.nextInt();
@@ -16,7 +33,12 @@ public class Highestvaluepalindrome2 {
 
     }
 
-    public static String highestValuePalindrome(String s, int n, int k) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String highestValuePalindrome(String s, int n, int k) {
         char[] c = s.toCharArray();
         boolean[] ch = new boolean[n];
         for (int i = 0; i < n / 2; ++i) {

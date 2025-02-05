@@ -15,6 +15,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.StringTokenizer;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class StringCal {
     static class Node {
         static int[] a;
@@ -24,7 +31,12 @@ class StringCal {
         final int min;
         Node[] nodes;
 
-        public Node(int start, int end) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Node(int start, int end) {
             this.start = start;
             this.end = end;
             if (start < end) {
@@ -43,7 +55,12 @@ class StringCal {
             }
         }
 
-        public int query(int queryStart, int queryEnd) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int query(int queryStart, int queryEnd) {
             if (queryEnd < start || end < queryStart) {
                 return neg;
             }
@@ -91,11 +108,21 @@ class InputReader {
     private BufferedReader input;
     private StringTokenizer line = new StringTokenizer("");
 
-    public InputReader(InputStream in) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public InputReader(InputStream in) {
         input = new BufferedReader(new InputStreamReader(in));
     }
 
-    public void fill() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public void fill() {
         try {
             if (!line.hasMoreTokens()) line = new
                     StringTokenizer(input.readLine());
@@ -105,7 +132,12 @@ class InputReader {
         }
     }
 
-    public String next() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String next() {
         fill();
         return line.nextToken();
     }
@@ -114,21 +146,41 @@ class InputReader {
 class OutputWriter {
     private PrintWriter output;
 
-    public OutputWriter(OutputStream out) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public OutputWriter(OutputStream out) {
         output = new PrintWriter(out);
     }
 
-    public void println(Object o) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public void println(Object o) {
         output.println(o);
     }
 
-    public void close() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public void close() {
         output.close();
     }
 }
 
 class XString {
-    public static int[] lcp(String str, int[] suffix) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] lcp(String str, int[] suffix) {
         final int n = str.length();
         int[] pos = new int[n];
         for (int i = 0; i < n; i++) {
@@ -151,12 +203,22 @@ class XString {
         return lcp;
     }
 
-    public static int[] lcp(String str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] lcp(String str) {
         int[] suffix = suffixArray(str);
         return lcp(str, suffix);
     }
 
-    public static int[] suffixArray(String str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] suffixArray(String str) {
         final int n = str.length();
         Integer[] order = new Integer[n];
         for (int i = 0; i < n; i++) {
@@ -198,8 +260,18 @@ class XString {
     }
 }
 
-public class StringFunctionCalc {
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class StringFunctionCalc {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         InputStream inputStream = System.in;
         OutputStream outputStream = System.out;
         InputReader in = new InputReader(inputStream);

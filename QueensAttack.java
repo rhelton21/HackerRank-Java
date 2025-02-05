@@ -12,7 +12,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class QueensAttack {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class QueensAttack {
 
     /*
      * Complete the 'queensAttack' function below.
@@ -26,7 +38,12 @@ public class QueensAttack {
      *  5. 2D_INTEGER_ARRAY obstacles
      */
 
-    public static int queensAttack(int n, int k, int r, int c, List<List<Integer>> obstacles) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int queensAttack(int n, int k, int r, int c, List<List<Integer>> obstacles) {
         int[][] arr = obstacles.stream()
                 .map(l -> l.stream().mapToInt(Integer::intValue).toArray())
                 .toArray(int[][]::new);      HashMap<Integer, HashSet<Integer>> cache = new HashMap<>();
@@ -108,7 +125,12 @@ public class QueensAttack {
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

@@ -10,10 +10,27 @@ import java.io.*;
         import java.util.concurrent.*;
         import java.util.regex.*;
 
-public class FormingMagicSquare {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class FormingMagicSquare {
 
     // Complete the formingMagicSquare function below.
-    public static int formingMagicSquare(List<List<Integer>> list) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int formingMagicSquare(List<List<Integer>> list) {
 
         int[][] arr = list.stream()
                 .map(l -> l.stream().mapToInt(Integer::intValue).toArray())
@@ -58,7 +75,12 @@ public class FormingMagicSquare {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int[][] s = new int[3][3];

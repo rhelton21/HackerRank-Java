@@ -7,7 +7,19 @@ import java.text.*;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
-public class GCDMatrix {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class GCDMatrix {
     static final int MAXN = 100000;
     static final int MAXV = MAXN + 5;
     static final int[] a = new int[MAXV];
@@ -53,7 +65,12 @@ public class GCDMatrix {
         }
         return cnt;
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new
                 InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new

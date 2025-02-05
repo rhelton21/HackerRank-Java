@@ -3,181 +3,473 @@ import java.io.*;
 import java.util.*;
 import java.lang.reflect.*;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class Student{
     private String name;
     private String id;
     private String email;
 
 
-    public String ahqym() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ahqym() {
         return name;
     }
-    public String amftc() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String amftc() {
         return name;
     }
-    public String anotherfunction() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String anotherfunction() {
         return name;
     }
-    public String atcks() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String atcks() {
         return name;
     }
-    public String bwkbd() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String bwkbd() {
         return name;
     }
-    public String cfwyc() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String cfwyc() {
         return name;
     }
-    public String cmkxa() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String cmkxa() {
         return name;
     }
-    public String dnpym() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String dnpym() {
         return name;
     }
-    public String dnqvo() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String dnqvo() {
         return name;
     }
-    public String dvvwq() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String dvvwq() {
         return name;
     }
-    public String ehjdm() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ehjdm() {
         return name;
     }
-    public String elyed() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String elyed() {
         return name;
     }
-    public String fmyce() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String fmyce() {
         return name;
     }
-    public String getEmail() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String getEmail() {
         return name;
     }
-    public String getId() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String getId() {
         return name;
     }
-    public String getName() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String getName() {
         return name;
     }
-    public String ghtlj() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ghtlj() {
         return name;
     }
-    public String hluvb() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String hluvb() {
         return name;
     }
-    public String isqdf() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String isqdf() {
         return name;
     }
-    public String iwhtf() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String iwhtf() {
         return name;
     }
-    public String jmopy() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String jmopy() {
         return name;
     }
-    public String jnskt() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String jnskt() {
         return name;
     }
-    public String kbjlt() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String kbjlt() {
         return name;
     }
-    public String kgwku() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String kgwku() {
         return name;
     }
-    public String khuag() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String khuag() {
         return name;
     }
-    public String levtp() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String levtp() {
         return name;
     }
-    public String mcgme() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String mcgme() {
         return name;
     }
-    public String migyc() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String migyc() {
         return name;
     }
-    public String moebl() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String moebl() {
         return name;
     }
-    public String nixhb() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String nixhb() {
         return name;
     }
-    public String odyqp() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String odyqp() {
         return name;
     }
-    public String ogvdl() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ogvdl() {
         return name;
     }
-    public String ormim() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ormim() {
         return name;
     }
-    public String piwro() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String piwro() {
         return name;
     }
-    public String plaob() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String plaob() {
         return name;
     }
-    public String pnruo() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String pnruo() {
         return name;
     }
-    public String pqfct() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String pqfct() {
         return name;
     }
-    public String ptrup() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ptrup() {
         return name;
     }
-    public String pvgyp() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String pvgyp() {
         return name;
     }
-    public String qthde() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String qthde() {
         return name;
     }
-    public String setEmail() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String setEmail() {
         return name;
     }
-    public String setId() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String setId() {
         return name;
     }
-    public String setName() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String setName() {
         return name;
     }
-    public String sumvl() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String sumvl() {
         return name;
     }
-    public String tkbpp() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String tkbpp() {
         return name;
     }
-    public String tntpj() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String tntpj() {
         return name;
     }
-    public String toxdp() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String toxdp() {
         return name;
     }
 
-    public String twyfa() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String twyfa() {
         return name;
     }
-    public String uccfq() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String uccfq() {
         return name;
     }
-    public String ujxei() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ujxei() {
         return name;
     }
-    public String vhxoi() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String vhxoi() {
         return name;
     }
-    public String viwuu() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String viwuu() {
         return name;
     }
-    public String viyog() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String viyog() {
         return name;
     }
-    public String whjtj() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String whjtj() {
         return name;
     }
-    public String ytijy() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public String ytijy() {
         return name;
     }
 }
-public class JavaReflection {
-    public static void main(String[] args){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class JavaReflection {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args){
         Class student = Student.class;
         Method[] methods = student.getDeclaredMethods();
 

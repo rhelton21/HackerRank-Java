@@ -12,6 +12,13 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class TwoTwo2 {
 
     /*
@@ -21,7 +28,12 @@ class TwoTwo2 {
      * The function accepts STRING a as parameter.
      */
 
-    public static int twoTwo(String a) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int twoTwo(String a) {
         // Write your code here
         Set<BigInteger> powersOfTwo = new HashSet<>();
         BigInteger powerOfTwo = BigInteger.ONE;
@@ -48,7 +60,12 @@ class TwoTwo2 {
 
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
  //       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

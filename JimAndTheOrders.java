@@ -6,8 +6,25 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class JimAndTheOrders {
-    public static void main(String[] args) throws IOException {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class JimAndTheOrders {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         //Get input
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -33,16 +50,31 @@ public class JimAndTheOrders {
         public final short id;
         public final int time;
 
-        public Fan(short id, int time) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Fan(short id, int time) {
             this.id = id;
             this.time = time;
         }
 
-        public int compare(Fan a, Fan b) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int compare(Fan a, Fan b) {
             return (a.time < b.time) ? -1 : (a.time > b.time) ? 1 : (a.id < b.id) ? -1 : 1;
         }
 
-        public int compareTo(Fan b) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int compareTo(Fan b) {
             return this.compare(this, b);
         }
     }

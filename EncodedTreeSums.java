@@ -8,26 +8,53 @@ import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class EncodedTreeSums {
         private static class Pair<T, U> {
             private final T first;
             private final U second;
 
-            public Pair(T first, U second) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */            public Pair(T first, U second) {
                 this.first = first;
                 this.second = second;
             }
 
-            public T getFirst() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */            public T getFirst() {
                 return first;
             }
 
-            public U getSecond() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */            public U getSecond() {
                 return second;
             }
         }
 
-        public static String encodedTreeSums(String input) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static String encodedTreeSums(String input) {
             Pair<Integer, String> result = computeSubtreeSums(input);
             String res= result.getSecond();
             System.out.println("res --->"+res);
@@ -64,7 +91,12 @@ class EncodedTreeSums {
                 return new Pair<>(sum, newTree.toString());
             }
         }
-    public static void main(String[] args) throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws Exception {
         encodedTreeSums("1{2{3,4},5{6}}");
         }
     }

@@ -79,7 +79,19 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class FunnyString {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class FunnyString {
 
     /*
      * Complete the 'funnyString' function below.
@@ -88,7 +100,12 @@ public class FunnyString {
      * The function accepts STRING s as parameter.
      */
 
-    public static String funnyString(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String funnyString(String s) {
         int n = s.length();
         for (int i = 1; i < n; i++) {
             if (Math.abs(s.charAt(i) - s.charAt(i - 1)) != Math.abs(s.charAt(n - i) - s.charAt(n - i - 1))) {
@@ -98,7 +115,12 @@ public class FunnyString {
         return "Funny";
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

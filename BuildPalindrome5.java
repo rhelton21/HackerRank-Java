@@ -3,18 +3,40 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class BuildPalindrome5 {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class BuildPalindrome5 {
         static int N = 100000;
         static int M = 4 * N + 3;
         static char[] a = new char[M];
         static int[] sa = new int[M];
         static int[] isa = new int[M];
-        static void iota(int v[], int end, int val) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        static void iota(int v[], int end, int val) {
             for (int i = 0; i < end; i++) {
                 v[i] = val++;
             }
         }
-        static void suffixArray(int n, int m, int h[], int x[]) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        static void suffixArray(int n, int m, int h[], int x[]) {
             Arrays.fill(h, 0, m, 0);
             for (int i = 0; i < n; i++) {
                 isa[i] = a[i];
@@ -98,7 +120,12 @@ public class BuildPalindrome5 {
         static long[] z = new long[2 * N + 1];
         static int[] len = new int[N];
 
-        static void manacher(int from, int n) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        static void manacher(int from, int n) {
             int m = 2 * n + 1;
             z[0] = 1;
             for (int f = 0, g = 0, i = 1; i < m; i++) {
@@ -225,7 +252,12 @@ public class BuildPalindrome5 {
             }
             return new String(result);
         }
-        public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static void main(String[] args) throws IOException {
             BufferedReader br = new BufferedReader(new
                     InputStreamReader(System.in));
 //            BufferedWriter bw = new BufferedWriter(new

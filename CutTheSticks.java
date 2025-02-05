@@ -8,6 +8,13 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class CutTheSticks {
 
     /*
@@ -17,7 +24,12 @@ class CutTheSticks {
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
 
-    public static List<Integer> cutTheSticks(List<Integer> arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<Integer> cutTheSticks(List<Integer> arr) {
 
 
         int[] array = arr.stream().mapToInt(i -> i).toArray();
@@ -45,7 +57,12 @@ class CutTheSticks {
         return list;
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

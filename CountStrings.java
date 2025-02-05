@@ -5,6 +5,13 @@ import java.io.*;
         import java.text.*;
         import java.util.*;
         import java.util.regex.*;
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class Regex {
     static char e = '\0';
     final Node root;
@@ -123,7 +130,12 @@ class Regex {
                 }
             }
         }
-        private void literal(Expression expr, char c) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void literal(Expression expr, char c) {
             expr.end.edges.add(new Edge(c, expr.end = new
                     Node()));
         }
@@ -158,7 +170,12 @@ class Regex {
         private char take() {
             return skipWs() ? regex.charAt(pos++) : e;
         }
-        private void putback() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void putback() {
             if (pos >= 0) --pos;
         }
         private boolean skipWs() {
@@ -249,7 +266,12 @@ class MatrixPower {
         return m;
     }
 }
-public class CountStrings  {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CountStrings  {
 
     /*
      * Complete the countStrings function below.
@@ -260,7 +282,12 @@ public class CountStrings  {
     }
     private static final Scanner scanner = new
             Scanner(System.in);
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         int t = Integer.parseInt(scanner.nextLine().trim());
         for (int tItr = 0; tItr < t; tItr++) {
             String[] rl = scanner.nextLine().split(" ");

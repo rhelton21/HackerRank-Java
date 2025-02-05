@@ -3,8 +3,25 @@ package hackerRank;
 import java.util.*;
 
 // https://github.com/danielvaughan/minimum-average-waiting-time/blob/master/src/main/java/org/codetaming/hackerrank/mawt/Solution.java
-public class MinimumTotalWaitingTime {
-    public static void main(String[] args) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class MinimumTotalWaitingTime {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int numCustomers = s.nextInt();
         List<Integer> arrivalTimes = new ArrayList<>();
@@ -20,7 +37,12 @@ public class MinimumTotalWaitingTime {
 }
 class MinimumAverageWaitingTimeCalculator {
 
-    public int calculateAverageWaitingTimes(int numCustomers, List<Integer> arrivalTimes, List<Integer> preparationTimes) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public int calculateAverageWaitingTimes(int numCustomers, List<Integer> arrivalTimes, List<Integer> preparationTimes) {
         double averageWaitingTime = calculateAverage(calculateWaitingTimes(numCustomers, arrivalTimes, preparationTimes));
         int roundedAverageWaitTime = (int) averageWaitingTime;
         return roundedAverageWaitTime;
@@ -54,7 +76,12 @@ class MinimumAverageWaitingTimeCalculator {
         return waitingTimes;
     }
 
-    private void outputWaitTimes(List<Integer> waitingTimes) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private void outputWaitTimes(List<Integer> waitingTimes) {
         StringBuffer sb = new StringBuffer();
         sb.append("Waiting times: ");
         for (int waitTime : waitingTimes)
@@ -74,7 +101,12 @@ class MinimumAverageWaitingTimeCalculator {
         return totalWaitTime;
     }
 
-    private void outputState(int customer, int arrivalTime, int preparationTime, int waitForCook, int cookIdleTime, int serveTime, int waitTime) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private void outputState(int customer, int arrivalTime, int preparationTime, int waitForCook, int cookIdleTime, int serveTime, int waitTime) {
         System.out.println(
                 "\ncustomer: " + customer +
                         "\narrivalTime: " + arrivalTime +

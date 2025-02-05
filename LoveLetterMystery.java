@@ -80,6 +80,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class LoveLetterMystery {
 
     /*
@@ -89,7 +96,12 @@ class LoveLetterMystery {
      * The function accepts STRING s as parameter.
      */
 
-    public static int theLoveLetterMystery(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int theLoveLetterMystery(String s) {
         int operations = 0;
         int length = s.length();
         for (int i = 0; i < length / 2; i++) {
@@ -97,7 +109,12 @@ class LoveLetterMystery {
         }
         return operations;
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

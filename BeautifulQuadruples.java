@@ -3,8 +3,25 @@ package hackerRank;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class BeautifulQuadruples {
-    public static void main(String[] args) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class BeautifulQuadruples {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int A = in.nextInt();
         int B = in.nextInt();

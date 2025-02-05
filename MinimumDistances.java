@@ -13,7 +13,19 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class MinimumDistances {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class MinimumDistances {
 
     /*
      * Complete the 'minimumDistances' function below.
@@ -22,7 +34,12 @@ public class MinimumDistances {
      * The function accepts INTEGER_ARRAY a as parameter.
      */
 
-    public static int minimumDistances(List<Integer> a) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int minimumDistances(List<Integer> a) {
         int min = 100001;
         Map<Integer, Integer> stats = new HashMap();
 
@@ -35,7 +52,12 @@ public class MinimumDistances {
 
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

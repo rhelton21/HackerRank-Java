@@ -82,6 +82,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class StrongPassword {
 
     /*
@@ -93,7 +100,12 @@ class StrongPassword {
      *  2. STRING password
      */
 
-    public static int minimumNumber(int n, String password) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int minimumNumber(int n, String password) {
         // Return the minimum number of characters to make the password strong
         int count = 0;
         boolean hasLowerCase = false, hasUpperCase = false, hasDigit = false, hasSpecial = false;
@@ -117,7 +129,12 @@ class StrongPassword {
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

@@ -7,8 +7,25 @@ import java.io.*;
 import java.util.*;
 import java.text.*;
 
-public class VerticalSticks {
-    public static void main(String[] args) throws IOException {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class VerticalSticks {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         StringBuffer sb = new StringBuffer();
         DecimalFormat df = new DecimalFormat("##.00\n");
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));

@@ -1,7 +1,19 @@
 package hackerRank;
 
 import java.util.Scanner;
-public class MorganandaString {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class MorganandaString {
 
 
     /*
@@ -13,7 +25,12 @@ public class MorganandaString {
      *  2. STRING b
      */
 
-    public static String morganAndString(String A, String B) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String morganAndString(String A, String B) {
         int i = 0, j = 0;
         StringBuffer sb = new StringBuffer();
         while(i < A.length() && j < B.length()) {
@@ -55,7 +72,12 @@ public class MorganandaString {
         sb.append(A.substring(i)).append(B.substring(j));
         return sb.toString();
     }
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int t = in.nextInt();
         in.nextLine();

@@ -13,7 +13,19 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-public class TimeInWords {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class TimeInWords {
 
     /*
      * Complete the 'timeInWords' function below.
@@ -24,7 +36,12 @@ public class TimeInWords {
      *  2. INTEGER m
      */
 
-    public static String timeInWords(int h, int m) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String timeInWords(int h, int m) {
         HashMap<Integer, String> words = new HashMap<>();
         ///////////////////////////////////////////////////////
         words.put(1,"one");words.put(2,"two");
@@ -92,7 +109,12 @@ public class TimeInWords {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

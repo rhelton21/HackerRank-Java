@@ -4,7 +4,19 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class SimpleArraySum {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class SimpleArraySum {
 
     // Old Way!
     // static int simpleArraySum(int[] ar) {
@@ -22,7 +34,12 @@ public class SimpleArraySum {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int arCount = Integer.parseInt(scanner.nextLine().trim());

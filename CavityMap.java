@@ -13,7 +13,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class CavityMap {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CavityMap {
 
     /*
      * Complete the 'cavityMap' function below.
@@ -22,7 +34,12 @@ public class CavityMap {
      * The function accepts STRING_ARRAY grid as parameter.
      */
 
-    public static List<String> cavityMap(List<String> list) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<String> cavityMap(List<String> list) {
 
         String[] grid = list.toArray(new String[0]);
         for(int i = 1; i < grid.length - 1; i++)
@@ -47,7 +64,12 @@ public class CavityMap {
 
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

@@ -12,7 +12,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class BeautifulTriplets {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class BeautifulTriplets {
 
     /*
      * Complete the 'beautifulTriplets' function below.
@@ -23,7 +35,12 @@ public class BeautifulTriplets {
      *  2. INTEGER_ARRAY arr
      */
 
-    public static int beautifulTriplets(int d, List<Integer> arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int beautifulTriplets(int d, List<Integer> arr) {
         int count = 0;
 
         for(int i = 0; i < arr.size() - 2; i++)
@@ -52,7 +69,12 @@ public class BeautifulTriplets {
 
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

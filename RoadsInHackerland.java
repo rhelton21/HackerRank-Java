@@ -9,7 +9,19 @@ import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
-public class RoadsInHackerland {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class RoadsInHackerland {
     /*
      * Complete the 'roadsInHackerland' function below.
      *
@@ -19,7 +31,12 @@ public class RoadsInHackerland {
      *  2. 2D_INTEGER_ARRAY roads
      */
 
-    public static String roadsInHackerland(int m, int n, List<List<Integer>> roads) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String roadsInHackerland(int m, int n, List<List<Integer>> roads) {
         N = n;
         M = m;
         Edge[] edges = new Edge[M];
@@ -89,22 +106,42 @@ public class RoadsInHackerland {
 
 
 
-    public static class Edge {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static class Edge {
         public int node1, node2, power;
         long count;
 
-        public Edge(int node1, int node2, int power) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Edge(int node1, int node2, int power) {
             this.node1 = node1;
             this.node2 = node2;
             this.power = power;
         }
     }
 
-    public static class Node {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static class Node {
         public int id;
         public ArrayList<Edge> edges;
 
-        public Node(int id) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Node(int id) {
             this.id = id;
             edges = new ArrayList<>();
         }
@@ -121,7 +158,12 @@ public class RoadsInHackerland {
         return forests[node] = find(forests[node]);
     }
 
-    static void join(int root1, int root2) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void join(int root1, int root2) {
         if (forests[root2] < forests[root1]) forests[root1] = root2;
         else {
             if (forests[root1] == forests[root2]) forests[root1]--;
@@ -144,7 +186,12 @@ public class RoadsInHackerland {
         return total;
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         String[] firstMultipleInput = bufferedReader.readLine().replaceAll("\\s+$", "").split(" ");

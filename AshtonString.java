@@ -4,8 +4,25 @@ import java.io.*;
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class AshtonString {
-    public static char ashtonString(String string, int k) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class AshtonString {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static char ashtonString(String string, int k) {
         char[] arr = string.toCharArray();
          Object[] letters = new Object[26];
 
@@ -66,31 +83,61 @@ public class AshtonString {
         return '-';
     }
 
-    public static class Bucket implements Comparable<Bucket> {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static class Bucket implements Comparable<Bucket> {
 
         String str;
         List<Integer> positions = new ArrayList<>();
 
-        public Bucket(final String str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Bucket(final String str) {
             this.str = str;
         }
 
         @Override
-        public int compareTo(final Bucket o) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int compareTo(final Bucket o) {
             return -str.compareTo(o.str);
         }
 
         @Override
-        public int hashCode() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int hashCode() {
             return str.hashCode();
         }
 
         @Override
-        public boolean equals(final Object obj) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public boolean equals(final Object obj) {
             return str.equals(((Bucket) obj).str);
         }
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = Integer.parseInt(br.readLine().trim());
 

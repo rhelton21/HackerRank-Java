@@ -4,6 +4,13 @@ package hackerRank;
 // path to connect all the cities
 import java.util.*;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class ConnectCities{
 
     static int m = 2;

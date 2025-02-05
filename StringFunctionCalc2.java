@@ -8,8 +8,25 @@ import java.math.BigInteger;
 import java.util.StringTokenizer;
 
 
-public class StringFunctionCalc2 {
-    public static long solve(String str) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class StringFunctionCalc2 {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static long solve(String str) {
         SuffixAutomata a = new SuffixAutomata(str);
         return a.root.dp();
     }
@@ -25,12 +42,22 @@ public class StringFunctionCalc2 {
             boolean visited = false;
             int terminals = 0;
 
-            public Vertex(Vertex o, int log) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */            public Vertex(Vertex o, int log) {
                 edges = o.edges.clone();
                 this.log = log;
             }
 
-            public Vertex(int log) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */            public Vertex(int log) {
                 edges = new Vertex[26];
                 this.log = log;
             }
@@ -51,7 +78,12 @@ public class StringFunctionCalc2 {
             }
         }
 
-        public SuffixAutomata(String str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public SuffixAutomata(String str) {
             last = root = new Vertex(0);
             for (int i = 0; i < str.length(); i++) {
                 addChar(str.charAt(i));
@@ -59,7 +91,12 @@ public class StringFunctionCalc2 {
             addTerminal();
         }
 
-        private void addChar(char c) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void addChar(char c) {
             Vertex cur = last;
             last = new Vertex(cur.log + 1);
             while (cur != null && cur.edges[c - 'a'] == null) {
@@ -89,7 +126,12 @@ public class StringFunctionCalc2 {
             }
         }
 
-        private void addTerminal() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void addTerminal() {
             Vertex cur = last;
             while (cur != null) {
                 cur.terminals++;
@@ -104,12 +146,22 @@ public class StringFunctionCalc2 {
 
         private static StringTokenizer tokenizer;
 
-        public FastScanner(InputStream in) throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public FastScanner(InputStream in) throws Exception {
             reader = new BufferedReader(new InputStreamReader(in));
             tokenizer = new StringTokenizer(reader.readLine().trim());
         }
 
-        public int numTokens() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int numTokens() throws Exception {
             if (!tokenizer.hasMoreTokens()) {
                 tokenizer = new StringTokenizer(reader.readLine().trim());
                 return numTokens();
@@ -117,7 +169,12 @@ public class StringFunctionCalc2 {
             return tokenizer.countTokens();
         }
 
-        public boolean hasNext() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public boolean hasNext() throws Exception {
             if (!tokenizer.hasMoreTokens()) {
                 tokenizer = new StringTokenizer(reader.readLine().trim());
                 return hasNext();
@@ -125,7 +182,12 @@ public class StringFunctionCalc2 {
             return true;
         }
 
-        public String next() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public String next() throws Exception {
             if (!tokenizer.hasMoreTokens()) {
                 tokenizer = new StringTokenizer(reader.readLine().trim());
                 return next();
@@ -133,23 +195,48 @@ public class StringFunctionCalc2 {
             return tokenizer.nextToken();
         }
 
-        public double nextDouble() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public double nextDouble() throws Exception {
             return Double.parseDouble(next());
         }
 
-        public float nextFloat() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public float nextFloat() throws Exception {
             return Float.parseFloat(next());
         }
 
-        public long nextLong() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public long nextLong() throws Exception {
             return Long.parseLong(next());
         }
 
-        public int nextInt() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int nextInt() throws Exception {
             return Integer.parseInt(next());
         }
 
-        public int[] nextIntArray() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public int[] nextIntArray() throws Exception {
             String[] line = reader.readLine().trim().split(" ");
             int[] out = new int[line.length];
             for (int i = 0; i < line.length; i++) {
@@ -158,7 +245,12 @@ public class StringFunctionCalc2 {
             return out;
         }
 
-        public double[] nextDoubleArray() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public double[] nextDoubleArray() throws Exception {
             String[] line = reader.readLine().trim().split(" ");
             double[] out = new double[line.length];
             for (int i = 0; i < line.length; i++) {
@@ -167,7 +259,12 @@ public class StringFunctionCalc2 {
             return out;
         }
 
-        public Integer[] nextIntegerArray() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public Integer[] nextIntegerArray() throws Exception {
             String[] line = reader.readLine().trim().split(" ");
             Integer[] out = new Integer[line.length];
             for (int i = 0; i < line.length; i++) {
@@ -176,7 +273,12 @@ public class StringFunctionCalc2 {
             return out;
         }
 
-        public BigInteger[] nextBigIngtegerArray() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public BigInteger[] nextBigIngtegerArray() throws Exception {
             String[] line = reader.readLine().trim().split(" ");
             BigInteger[] out = new BigInteger[line.length];
             for (int i = 0; i < line.length; i++) {
@@ -185,15 +287,30 @@ public class StringFunctionCalc2 {
             return out;
         }
 
-        public BigInteger nextBigInteger() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public BigInteger nextBigInteger() throws Exception {
             return new BigInteger(next());
         }
 
-        public String nextLine() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public String nextLine() throws Exception {
             return reader.readLine().trim();
         }
 
-        public long[] nextLongArray() throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public long[] nextLongArray() throws Exception {
             String[] line = reader.readLine().trim().split(" ");
             long[] out = new long[line.length];
             for (int i = 0; i < line.length; i++) {
@@ -202,7 +319,12 @@ public class StringFunctionCalc2 {
             return out;
         }
     }
-    public static void main(String[] args) throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws Exception {
         FastScanner sc = new FastScanner(System.in);
         String str = sc.next();
         System.out.println(solve(str));

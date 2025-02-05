@@ -3,7 +3,19 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class TwoTwoSolution {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class TwoTwoSolution {
 
     static Map<String, Boolean> map;
 
@@ -19,7 +31,12 @@ public class TwoTwoSolution {
         }
     }
 
-    public static void main(String args[]) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String args[]) throws IOException {
    //     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int t = 5;
         StringBuilder ans = new StringBuilder();

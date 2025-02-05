@@ -6,8 +6,25 @@ package hackerRank;
 import java.io.*;
 import java.math.BigInteger;
 
-public class FibonacciModified {
-    public static void main(String[] args) throws IOException {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class FibonacciModified {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         //Get input
         String[] line = (new BufferedReader(new InputStreamReader(System.in))).readLine().split(" ");

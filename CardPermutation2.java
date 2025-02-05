@@ -7,7 +7,19 @@ import java.util.Objects;
 import java.util.stream.Stream;
 import static java.util.stream.Collectors.toList;
 
-public class CardPermutation2 {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class CardPermutation2 {
 
     private static final int MAXN = 300005;
     private static final int MOD = 1000000007;
@@ -55,7 +67,12 @@ public class CardPermutation2 {
         return i & -i;
     }
 
-    private static void update(int o, int v) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private static void update(int o, int v) {
         int i = o + 1;
         while (i <= N) {
             c[i] = add(c[i], v);
@@ -77,7 +94,12 @@ public class CardPermutation2 {
         return mul(mul(n, pop(n, 1)), INV2);
     }
 
-    private static void prepare() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private static void prepare() {
         for (int i = 1; i <= N; i++) {
             a[i] -= 1;
             if (a[i] == -1) {
@@ -138,7 +160,12 @@ public class CardPermutation2 {
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());

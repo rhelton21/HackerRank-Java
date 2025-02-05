@@ -4,10 +4,27 @@ package hackerRank;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BuildPalindrome3 {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class BuildPalindrome3 {
 
 
-    public static String buildPalindrome(String s1, String s2){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String buildPalindrome(String s1, String s2){
         int c=0;
         String ta = "-1";
         for(int i=0;i<s1.length();++i){
@@ -114,12 +131,22 @@ public class BuildPalindrome3 {
         }
         return ta;
     }
-    public static String reverse(String s){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String reverse(String s){
         StringBuilder sb=new StringBuilder(s);
         sb=sb.reverse();
         return (new String(sb));
     }
-    public static boolean isPalindrome(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static boolean isPalindrome(String s) {
         for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
             if (s.charAt(i) != s.charAt(j)) {
                 return false;
@@ -129,7 +156,12 @@ public class BuildPalindrome3 {
     }
 
 
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();

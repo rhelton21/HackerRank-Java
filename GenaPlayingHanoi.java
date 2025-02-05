@@ -3,9 +3,26 @@ package hackerRank;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class GenaPlayingHanoi {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class GenaPlayingHanoi {
 
-    public static int[] readIntArray3(Scanner in, int size) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int[] readIntArray3(Scanner in, int size) {
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = in.nextInt();
@@ -15,7 +32,12 @@ public class GenaPlayingHanoi {
 
 
 
-    public static void main(String[] args) throws Exception {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws Exception {
         Scanner in = new Scanner(System.in);
         int cases = 1;//in.nextInt();
         for (int testcase = 0; testcase < cases; testcase++) {
@@ -28,7 +50,12 @@ public class GenaPlayingHanoi {
         }
     }
 
-    public static int hanoi(int n, List<Integer> posts) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int hanoi(int n, List<Integer> posts) {
         int[] locs = posts.stream()
                 .mapToInt(Integer::intValue)
                 .toArray();

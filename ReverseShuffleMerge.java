@@ -2,8 +2,25 @@ package hackerRank;
 
 import java.io.*;
         import java.util.*;
-public class ReverseShuffleMerge {
-    static public class CharData {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class ReverseShuffleMerge {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static public class CharData {
         int total;
         int skipped;
         int taken;
@@ -13,12 +30,22 @@ public class ReverseShuffleMerge {
         boolean hasToSkip(){
             return 2*taken == total;
         }
-        void putBack(){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void putBack(){
             taken--;
             skipped++;
         }
     }
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String s = new
                 StringBuilder(in.nextLine()).reverse().toString();

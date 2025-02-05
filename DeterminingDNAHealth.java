@@ -83,8 +83,20 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class DetermineDNAHealth {
-        public static String determineDNAHealth(int n, List<String> genes, List<Integer> health, int s, List<String[]> strands) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static String determineDNAHealth(int n, List<String> genes, List<Integer> health, int s, List<String[]> strands) {
             Map<String, Integer> geneHealthMap = new HashMap<>();
             for (int i = 0; i < n; i++) {
                 geneHealthMap.put(genes.get(i), health.get(i));
@@ -107,7 +119,12 @@ class DetermineDNAHealth {
 
             return Arrays.stream(healthValues).min().orElse(0) + " " + Arrays.stream(healthValues).max().orElse(0);
         }
-        public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static void main(String[] args) throws IOException {
             Scanner scanner = new Scanner(System.in);
             int n = scanner.nextInt();
             List<String> genes = IntStream.range(0, n).mapToObj(i -> scanner.next()).collect(Collectors.toList());

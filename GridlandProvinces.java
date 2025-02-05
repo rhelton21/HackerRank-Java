@@ -7,7 +7,19 @@ import java.util.HashSet;
         import java.util.Set;
 import java.util.stream.IntStream;
 
-public class GridlandProvinces {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class GridlandProvinces {
     private final static Scanner scanner =
             new Scanner(System.in);
     private final static long mod1 = 2147483607,
@@ -18,7 +30,12 @@ public class GridlandProvinces {
 
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
  //       BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
@@ -106,7 +123,12 @@ public class GridlandProvinces {
 
     }
 
-    static void process(char[] s1, char[] s2, int k, boolean b) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void process(char[] s1, char[] s2, int k, boolean b) {
         long p1 = 0, p2 = 0, p3 = 0, p4 = 0;
         for (int i = 0; i < k; ++i) {
             p1 = (p1 + s1[i] * arr1[k - 1 - i]) % mod1;
@@ -155,7 +177,12 @@ public class GridlandProvinces {
         }
     }
 
-    private static void reverse(char[] str) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    private static void reverse(char[] str) {
         for (int i = str.length / 2 - 1; i >= 0; --i) {
             char t = str[i];
             str[i] = str[str.length - 1 - i];

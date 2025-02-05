@@ -12,7 +12,19 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
-public class ManasaandStones {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class ManasaandStones {
 
     /*
      * Complete the 'stones' function below.
@@ -26,7 +38,12 @@ public class ManasaandStones {
     public static TreeSet<Integer> set = new TreeSet<>();
     public static HashMap<String, Boolean> map = new HashMap<>();
 
-    public static List<Integer> stones(int n, int a, int b) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<Integer> stones(int n, int a, int b) {
         // Write your code here
         map.clear();
         set.clear();
@@ -45,7 +62,12 @@ public class ManasaandStones {
         return list;
     }
 
-    public static void compute(int num, int a, int b, int n) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void compute(int num, int a, int b, int n) {
         if (map.containsKey("" + num + "," + n)) {
             return;
         }
@@ -61,7 +83,12 @@ public class ManasaandStones {
         compute(num + a, a, b, n-1);
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

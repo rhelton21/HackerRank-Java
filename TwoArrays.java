@@ -3,8 +3,25 @@ package hackerRank;
 //https://www.hackerrank.com/challenges/two-arrays
 import java.util.*;
 
-public class TwoArrays {
-    public static void main(String[] args) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class TwoArrays {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         for(int T = in.nextInt(); T > 0; T--){
             int N = in.nextInt();

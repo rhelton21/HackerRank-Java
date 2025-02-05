@@ -4,8 +4,25 @@ package hackerRank;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class BuildPalindrome2 {
-    public static void main(String[] args) {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class BuildPalindrome2 {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
 
         Scanner sc=new Scanner(System.in);
         int t=sc.nextInt();
@@ -130,13 +147,23 @@ public class BuildPalindrome2 {
         }
     }
 
-    public static String reverse(String s){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String reverse(String s){
         StringBuilder sb=new StringBuilder(s);
         sb=sb.reverse();
         return (new String(sb));
     }
 
-    public static boolean isPalin(String s){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static boolean isPalin(String s){
         boolean flag=true;
 
         for(int i=0;i<s.length()/2;++i){

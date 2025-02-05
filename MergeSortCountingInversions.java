@@ -12,6 +12,13 @@ import java.io.*;
         import static java.util.stream.Collectors.joining;
         import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class MergeSortCountingInversions {
     private static long mergeWhileSorting(int arr[], int leftNdx, int middle, int rightNdx) {
         long inversionCount = 0;
@@ -64,7 +71,12 @@ class MergeSortCountingInversions {
      * The function accepts INTEGER_ARRAY arr as parameter.
      */
 
-    public static long countInversions(List<Integer> integerList) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static long countInversions(List<Integer> integerList) {
         // Write your code here
         long count = recursivelyPartition(integerList.stream().mapToInt(i->i).toArray(), 0, integerList.size()-1);
         return count;
@@ -76,14 +88,24 @@ class MergeSortCountingInversions {
  * The function accepts INTEGER_ARRAY arr as parameter.
  */
 
-//   public static long countInversions(List<Integer> arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ *///   public static long countInversions(List<Integer> arr) {
 // Write your code here
 
 //   }
 
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
 //        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

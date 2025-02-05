@@ -7,9 +7,26 @@ package hackerRank;
 import java.io.*;
 import java.util.*;
 
-public class Crush {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Crush {
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
 
         //INPUT
         final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -36,7 +53,12 @@ public class Crush {
         private long[] data;
         private long[] lazy;
 
-        public SegmentTree(final int[] arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public SegmentTree(final int[] arr) {
             init(arr);
         }
 
@@ -44,7 +66,12 @@ public class Crush {
         //       BUILD        //
         ////////////////////////
 
-        private void init(final int[] arr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        private void init(final int[] arr) {
             this.length = arr.length;
             int height = (int) Math.ceil(Math.log(this.length) / Math.log(2));
             int size = (1 << (height + 1)) - 1;
@@ -66,11 +93,21 @@ public class Crush {
         //         MAX        //
         ////////////////////////
 
-        public long max() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public long max() {
             return max(0, this.length - 1);
         }
 
-        public long max(final int ql, final int qr) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public long max(final int ql, final int qr) {
             return max(this.data, this.lazy, ql, qr, 0, this.length - 1, 0);
         }
 
@@ -105,11 +142,21 @@ public class Crush {
         //       UPDATE       //
         ////////////////////////
 
-        public void update(final int ql, final int qr, final int val) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public void update(final int ql, final int qr, final int val) {
             update(this.data, this.lazy, ql, qr, 0, this.length - 1, val, 0);
         }
 
-        public long update(final long[] arr, final long[] lazy, final int ql, final int qr, int min, int max, final int val, int i) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public long update(final long[] arr, final long[] lazy, final int ql, final int qr, int min, int max, final int val, int i) {
 
             //Unlazy
             if (lazy[i] != 0L) {
@@ -160,7 +207,12 @@ public class Crush {
             return (i + 1) << 1;
         }
 
-        public String toString() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public String toString() {
             return Arrays.toString(this.data);
         }
     }

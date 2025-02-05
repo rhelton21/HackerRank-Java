@@ -14,6 +14,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
     class BuildString {
 
         /*
@@ -26,7 +33,12 @@ import static java.util.stream.Collectors.toList;
          *  3. STRING s
          */
 
-        public static int buildString(int N, int A, int B, String S){
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static int buildString(int N, int A, int B, String S){
             int[] dp = new int[N];
             dp[0] = A;
             int lastL = 0;
@@ -47,7 +59,12 @@ import static java.util.stream.Collectors.toList;
             }
             return dp[N-1];
         }
-        public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        public static void main(String[] args) throws IOException {
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

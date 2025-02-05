@@ -113,6 +113,13 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class WeightedUniformStrings {
 
     /*
@@ -125,7 +132,12 @@ class WeightedUniformStrings {
      */
 
 
-    public static List<String> weightedUniformStrings(String s, List<Integer> queries) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static List<String> weightedUniformStrings(String s, List<Integer> queries) {
         Set<Integer> weights = new HashSet<>();
         int weight = 0;
         for (int i = 0; i < s.length(); i++) {
@@ -144,7 +156,12 @@ class WeightedUniformStrings {
         }
         return result;
     }
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

@@ -5,7 +5,19 @@ import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class TwoStringGame2 {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class TwoStringGame2 {
     static final int maxn = 300000;
     static final long limit = 1000000000000000000l;
     static boolean[] was = new boolean[30];
@@ -33,7 +45,12 @@ public class TwoStringGame2 {
             len[1] = lnk[1] = 0;
         }
 
-        void push(int c) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void push(int c) {
             int cur = ++nodes, p;
             len[cur] = len[last] + 1;
             for (p = last; (p > 0) && (next[c][p] == 0); p = lnk[p]) {
@@ -61,7 +78,12 @@ public class TwoStringGame2 {
             last = cur;
         }
 
-        void grundyPrecalc() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void grundyPrecalc() {
             for (int i = 1; i <= nodes; i++) {
                 srt[i] = ((long) len[i] << 32l) | i;
             }
@@ -84,7 +106,12 @@ public class TwoStringGame2 {
             }
         }
 
-        void substrPrecalc() {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void substrPrecalc() {
             for (int i = 1; i <= nodes; i++) {
                 srt[i] = ((long) len[i] << 32l) | i;
             }
@@ -112,7 +139,12 @@ public class TwoStringGame2 {
             }
         }
 
-        void dpRecalc(int badValue) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */        void dpRecalc(int badValue) {
             for (int i = 1; i <= nodes; i++) {
                 srt[i] = ((long) len[i] << 32l) | i;
             }
@@ -129,7 +161,12 @@ public class TwoStringGame2 {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new
                 InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new

@@ -2,14 +2,31 @@ package hackerRank;
 
 import java.util.Scanner;
 
-public class Maximumpalindromes {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class Maximumpalindromes {
 
 
     static int[][] count;
     static long[] f;
     static long mod = 1000000007;
 
-    static void initialize(String s) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    static void initialize(String s) {
         count = new int[s.length()][26];
 
         for (int i = 0; i < s.length(); i++) {
@@ -86,7 +103,12 @@ public class Maximumpalindromes {
     }
 
 
-    public static void main(String[] args) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         String s = in.next();
         initialize(s);

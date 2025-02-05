@@ -8,6 +8,13 @@ import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.toList;
 
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
 class CluesOnBinaryPath2 {
 
     /*
@@ -20,13 +27,23 @@ class CluesOnBinaryPath2 {
      *  3. 2D_INTEGER_ARRAY roads
      */
 
-    public static int cluesOnBinaryPath(int n, int d, List<List<Integer>> roads) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static int cluesOnBinaryPath(int n, int d, List<List<Integer>> roads) {
         // Write your code here
         return 0;
     }
 
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 

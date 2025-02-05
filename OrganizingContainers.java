@@ -20,9 +20,26 @@ import static java.util.stream.Collectors.toList;
  * The function is expected to return a STRING.
  * The function accepts 2D_INTEGER_ARRAY container as parameter.
  */
-public class OrganizingContainers {
+/**
+ * This Java file is part of a HackerRank solution.
+ * It solves a specific algorithmic challenge.
+ *
+ * Author: [Your Name]
+ * Date: [Date]
+ */
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */public class OrganizingContainers {
 
-    public static String organizingContainers(List<List<Integer>> container) {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static String organizingContainers(List<List<Integer>> container) {
         int[][] arr = container.stream()
                 .map(l -> l.stream().mapToInt(Integer::intValue).toArray())
                 .toArray(int[][]::new);
@@ -47,7 +64,12 @@ public class OrganizingContainers {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+/**
+ * Method description:
+ * - Explain what this method does.
+ * - List input parameters.
+ * - Describe expected return values.
+ */    public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
